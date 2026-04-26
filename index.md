@@ -1,13 +1,23 @@
 ---
-# Do not edit the text between these lines!
-layout: default
+layout: home
 ---
 
-# This is a big header
+# EX09: Data Analysis for Continuous Improvement
 
-<!-- This is a comment. Below, you'll see code for inserting an image. To make this image appear, update <custom-path>. To add an image, save it inside the imgs folder of this repository. -->
-<img src="<custom-path>/static/imgs/logo.png" alt="Image of Comp110 rainbow logo. "  width="500"/>
+## Summary
+For this project, I analyzed anonymized COMP 110 survey data to explore whether students with lower self-reported understanding are more likely to want optional pre-lecture videos.
 
-## This is a small header
+## Analysis
+I combined survey data from two sections and selected the columns `pre_lecture_videos` and `understanding`, both rated on a 1-7 Likert scale. After filtering out empty responses, I produced three visualizations:
 
-This is basic paragraph text.
+**Plot 1: Scatter Plot**
+A scatter plot of understanding vs. pre-lecture video demand showing the raw relationship across all respondents.
+
+**Plot 2: Box Plot**
+A box plot grouping students by understanding score, showing the distribution of pre-lecture video demand at each level.
+
+**Plot 3: Bar Chart**
+A bar chart showing average pre-lecture video demand per understanding level.
+
+## Conclusion
+Students who reported lower understanding tended to rate pre-lecture videos as more helpful. This suggests the course should consider producing short optional pre-lecture videos, particularly before topics that historically cause the most confusion. The main trade-off is production time for instructors and the risk that students use videos to skip lecture entirely.
